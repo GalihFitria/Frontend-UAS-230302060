@@ -611,11 +611,11 @@ file berada di `resources/views/Mahasiswa.blade.php`
 ```bash
 public function exportPdf()
     {
-        $response = Http::get('http://localhost:8080/prodi');
+        $response = Http::get('http://localhost:8080/matkul');
         if ($response->successful()) {
-            $prodi = collect($response->json());
-            $pdf = Pdf::loadView('pdf.cetak', compact('prodi')); 
-            return $pdf->download('prodi.pdf');
+            $matkul = collect($response->json());
+            $pdf = Pdf::loadView('pdf.cetak', compact('matkul')); 
+            return $pdf->download('matkul.pdf');
         } else {
             return back()->with('error', 'Gagal mengambil data untuk PDF');
         }

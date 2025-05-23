@@ -623,5 +623,6 @@ public function exportPdf()
 ```
 > karena tombol submit berada pada Matkul.blade.php maka function exportPDFnya ditaruh MatkulController
 
+<h2 align="center">SEMANGAT NGODING gaes 💻🔥</h2>
 
 
